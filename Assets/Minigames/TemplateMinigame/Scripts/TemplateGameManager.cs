@@ -26,6 +26,12 @@ public class TemplateGameManager : MonoBehaviour
 
     public void SetPlayerPosition(int position)
     {
+        if (position >= _positions.Count)
+        {
+            Debug.LogWarning("Invalid position! Max is the max number of players");
+            return;
+        }
+            
         _positions[_selectedPlayer] = position;
         string str = "Current rankings: ";
 

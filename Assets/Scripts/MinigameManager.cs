@@ -20,7 +20,8 @@ public class MinigameManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        GlobalGameManager.Instance.MiniGameStartEvent -= OnStartMinigame;
+        if (GlobalGameManager.Instance != null)
+            GlobalGameManager.Instance.MiniGameStartEvent -= OnStartMinigame;
     }
 
     private void OnStartMinigame()

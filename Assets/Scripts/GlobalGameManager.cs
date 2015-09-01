@@ -196,7 +196,7 @@ public class GlobalGameManager : Singleton<GlobalGameManager>
             else
             {
                 _addedPawnPositions[i] = _numStepsAwarded[results[i]];
-                Debug.Log("Player " + i + " got first place and advanced " + _addedPawnPositions[i] + " steps!");
+                Debug.Log("Player " + i + " advanced " + _addedPawnPositions[i] + " steps!");
             }
         }
 

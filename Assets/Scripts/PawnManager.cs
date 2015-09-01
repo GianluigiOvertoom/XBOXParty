@@ -19,7 +19,8 @@ public class PawnManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        GlobalGameManager.Instance.GameStartEvent -= OnGameStart;
+        if (GlobalGameManager.Instance != null)
+            GlobalGameManager.Instance.GameStartEvent -= OnGameStart;
     }
 
     private void OnGameStart()

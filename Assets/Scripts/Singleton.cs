@@ -8,11 +8,10 @@ public class Singleton<T> : MonoBehaviour where T : Component
     {
         get
         {
-            if (_instance == null)
-            {
-                Debug.LogError("The singleton " + typeof(T).FullName + " doesn't have an instance yet!");
-                //_instance = (T)FindObjectOfType(typeof(T));
-            }
+            //if (_instance == null)
+            //{
+            //    Debug.LogError("The singleton " + typeof(T).FullName + " doesn't have an instance yet!");
+            //}
             
             return _instance;
         }
