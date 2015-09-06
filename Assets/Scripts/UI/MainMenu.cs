@@ -1,62 +1,65 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainMenu : MonoBehaviour
+namespace Board
 {
-    [SerializeField]
-    private GameObject _pressStart;
-
-    private void Start()
+    public class MainMenu : MonoBehaviour
     {
-        GlobalGameManager.Instance.GameStartEvent += OnGameStart;
-        GlobalGameManager.Instance.ResetGameEvent += OnResetGame;
+        [SerializeField]
+        private GameObject _pressStart;
 
-        if (GlobalGameManager.Instance.GameState != GameState.STATE_MAINMENU)
+        private void Start()
+        {
+            GlobalGameManager.Instance.GameStartEvent += OnGameStart;
+            GlobalGameManager.Instance.ResetGameEvent += OnResetGame;
+
+            if (GlobalGameManager.Instance.GameState != GameState.STATE_MAINMENU)
+            {
+                Hide();
+            }
+        }
+
+        private void OnDestroy()
+        {
+            if (GlobalGameManager.Instance != null)
+            {
+                GlobalGameManager.Instance.GameStartEvent -= OnGameStart;
+                GlobalGameManager.Instance.ResetGameEvent -= OnResetGame;
+            }
+        }
+
+        private void OnGameStart()
         {
             Hide();
         }
-    }
 
-    private void OnDestroy()
-    {
-        if (GlobalGameManager.Instance != null)
+        private void OnResetGame()
         {
-            GlobalGameManager.Instance.GameStartEvent -= OnGameStart;
-            GlobalGameManager.Instance.ResetGameEvent -= OnResetGame;
+            Show();
         }
-    }
 
-    private void OnGameStart()
-    {
-        Hide();
-    }
+        private void Show()
+        {
+            gameObject.SetActive(true);
+        }
 
-    private void OnResetGame()
-    {
-        Show();
-    }
+        private void Hide()
+        {
+            gameObject.SetActive(false);
+        }
 
-    private void Show()
-    {
-        gameObject.SetActive(true);
-    }
+        //Functions for the UI elements
+        public void SetPlayerCount(int playerCount)
+        {
+            GlobalGameManager.Instance.SetPlayerCount(playerCount);
 
-    private void Hide()
-    {
-        gameObject.SetActive(false);
-    }
+            if (_pressStart != null)
+                _pressStart.SetActive(true);
+        }
 
-    //Functions for the UI elements
-    public void SetPlayerCount(int playerCount)
-    {
-        GlobalGameManager.Instance.SetPlayerCount(playerCount);
-
-        if (_pressStart != null)
-            _pressStart.SetActive(true);
-    }
-
-    public void StartGame()
-    {
-        GlobalGameManager.Instance.StartGame();
+        public void StartGame()
+        {
+            GlobalGameManager.Instance.StartGame();
+        }
     }
 }

@@ -3,49 +3,52 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class BoardManager : MonoBehaviour
+namespace Board
 {
-    [SerializeField]
-    private Image _logoImage;
-
-    [SerializeField]
-    private SpriteRenderer _boardImage;
-
-    [SerializeField]
-    private List<Sprite> _logoSprites;
-    
-    [SerializeField]
-    private List<Sprite> _boardSprites;
-
-    [SerializeField]
-    private List<Node> _nodes;
-
-	// Use this for initialization
-	private void Awake()
+    public class BoardManager : MonoBehaviour
     {
-        int rand = Random.Range(0, _logoSprites.Count);
-        _logoImage.sprite = _logoSprites[rand];
+        [SerializeField]
+        private Image _logoImage;
 
-        rand = Random.Range(0, _boardSprites.Count);
-        _boardImage.sprite = _boardSprites[rand];
-	}
+        [SerializeField]
+        private SpriteRenderer _boardImage;
 
-    public Node GetNode(int id)
-    {
-        if (id >= _nodes.Count)
-            return null;
+        [SerializeField]
+        private List<Sprite> _logoSprites;
 
-        return _nodes[id];
-    }
+        [SerializeField]
+        private List<Sprite> _boardSprites;
 
-    public int GetNodeId(Node node)
-    {
-        for (int i = 0; i < _nodes.Count; ++i)
+        [SerializeField]
+        private List<Node> _nodes;
+
+        // Use this for initialization
+        private void Awake()
         {
-            if (_nodes[i] == node)
-                return i;
+            int rand = Random.Range(0, _logoSprites.Count);
+            _logoImage.sprite = _logoSprites[rand];
+
+            rand = Random.Range(0, _boardSprites.Count);
+            _boardImage.sprite = _boardSprites[rand];
         }
 
-        return -1;
+        public Node GetNode(int id)
+        {
+            if (id >= _nodes.Count)
+                return null;
+
+            return _nodes[id];
+        }
+
+        public int GetNodeId(Node node)
+        {
+            for (int i = 0; i < _nodes.Count; ++i)
+            {
+                if (_nodes[i] == node)
+                    return i;
+            }
+
+            return -1;
+        }
     }
 }

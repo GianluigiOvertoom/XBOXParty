@@ -2,88 +2,91 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public enum MinigameMode
+namespace Board
 {
-    MODE_FFA = 0,
-    MODE_2V2 = 1,
-    MODE_1V3 = 2
-}
-
-public class MinigameManager : MonoBehaviour
-{
-    [SerializeField]
-    private List<string> _minigamesFFA;
-
-    [SerializeField]
-    private List<string> _minigames2v2;
-    
-    [SerializeField]
-    private List<string> _minigames1v3;
-
-    [SerializeField]
-    private string _debugMinigame;
-
-    private void Awake()
+    public enum MinigameMode
     {
-        GlobalGameManager.Instance.MiniGameStartEvent += OnStartMinigame;
+        MODE_FFA = 0,
+        MODE_2V2 = 1,
+        MODE_1V3 = 2
     }
 
-    private void OnDestroy()
+    public class MinigameManager : MonoBehaviour
     {
-        if (GlobalGameManager.Instance != null)
-            GlobalGameManager.Instance.MiniGameStartEvent -= OnStartMinigame;
-    }
+        [SerializeField]
+        private List<string> _minigamesFFA;
 
-    private void OnStartMinigame()
-    {
-        if (GlobalGameManager.Instance.GameState != GameState.STATE_BOARD)
-            return;
+        [SerializeField]
+        private List<string> _minigames2v2;
 
-        Debug.Log("Starting minigame!");
+        [SerializeField]
+        private List<string> _minigames1v3;
 
-        if (_debugMinigame != "")
+        [SerializeField]
+        private string _debugMinigame;
+
+        private void Awake()
         {
-            Application.LoadLevel(_debugMinigame);
-            return;
+            GlobalGameManager.Instance.MiniGameStartEvent += OnStartMinigame;
         }
 
-        //Determine random gamemode
-        int gameMode = 0;
-        string levelName = "";
-
-        //Only play 2v2 & 1v3 if it's a 4 player game.
-        if (GlobalGameManager.Instance.PlayerCount >= 4)
+        private void OnDestroy()
         {
-            gameMode = Random.Range(0, 99);
-            gameMode /= 3;
+            if (GlobalGameManager.Instance != null)
+                GlobalGameManager.Instance.MiniGameStartEvent -= OnStartMinigame;
         }
 
-        //Determine the level
-        switch (gameMode)
+        private void OnStartMinigame()
         {
-            case (int)MinigameMode.MODE_FFA:
+            if (GlobalGameManager.Instance.GameState != GameState.STATE_BOARD)
+                return;
+
+            Debug.Log("Starting minigame!");
+
+            if (_debugMinigame != "")
             {
-                int minigameID = Random.Range(0, _minigamesFFA.Count);
-                levelName = _minigamesFFA[minigameID];
-                break;
+                Application.LoadLevel(_debugMinigame);
+                return;
             }
 
-            case (int)MinigameMode.MODE_2V2:
+            //Determine random gamemode
+            int gameMode = 0;
+            string levelName = "";
+
+            //Only play 2v2 & 1v3 if it's a 4 player game.
+            if (GlobalGameManager.Instance.PlayerCount >= 4)
             {
-                int minigameID = Random.Range(0, _minigames2v2.Count);
-                levelName = _minigamesFFA[minigameID];
-                break;
+                gameMode = Random.Range(0, 99);
+                gameMode /= 3;
             }
 
-            case (int)MinigameMode.MODE_1V3:
+            //Determine the level
+            switch (gameMode)
             {
-                int minigameID = Random.Range(0, _minigames1v3.Count);
-                levelName = _minigamesFFA[minigameID];
-                break;
+                case (int)MinigameMode.MODE_FFA:
+                    {
+                        int minigameID = Random.Range(0, _minigamesFFA.Count);
+                        levelName = _minigamesFFA[minigameID];
+                        break;
+                    }
+
+                case (int)MinigameMode.MODE_2V2:
+                    {
+                        int minigameID = Random.Range(0, _minigames2v2.Count);
+                        levelName = _minigamesFFA[minigameID];
+                        break;
+                    }
+
+                case (int)MinigameMode.MODE_1V3:
+                    {
+                        int minigameID = Random.Range(0, _minigames1v3.Count);
+                        levelName = _minigamesFFA[minigameID];
+                        break;
+                    }
+
             }
 
+            Application.LoadLevel(levelName);
         }
-
-        Application.LoadLevel(levelName);
     }
 }

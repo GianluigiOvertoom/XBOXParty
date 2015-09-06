@@ -1,28 +1,31 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class InputHandler : MonoBehaviour
+namespace Board
 {
-	private void Update ()
+    public class InputHandler : MonoBehaviour
     {
-        GameState state = GlobalGameManager.Instance.GameState;
-
-	    if (Input.GetButtonUp("Player0_Start"))
+        private void Update()
         {
-            switch (state)
+            GameState state = GlobalGameManager.Instance.GameState;
+
+            if (Input.GetButtonUp("Start"))
             {
-                case GameState.STATE_MAINMENU:
-                    GlobalGameManager.Instance.StartGame();
-                    break;
+                switch (state)
+                {
+                    case GameState.STATE_MAINMENU:
+                        GlobalGameManager.Instance.StartGame();
+                        break;
 
-                case GameState.STATE_BOARD:
-                    GlobalGameManager.Instance.StartMinigame();
-                    break;
+                    case GameState.STATE_BOARD:
+                        GlobalGameManager.Instance.StartMinigame();
+                        break;
 
-                case GameState.STATE_RESULTMENU:
-                    GlobalGameManager.Instance.ResetGame();
-                    break;
+                    case GameState.STATE_RESULTMENU:
+                        GlobalGameManager.Instance.ResetGame();
+                        break;
+                }
             }
         }
-	}
+    }
 }

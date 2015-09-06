@@ -1,14 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LoadScene : MonoBehaviour
+namespace Board
 {
-    [SerializeField]
-    private string _sceneName;
-
-	void Start ()
+    public class LoadScene : MonoBehaviour
     {
-        Application.LoadLevel(_sceneName);
-	}
-	
+        [SerializeField]
+        private string _sceneName;
+
+        void Start()
+        {
+            Application.LoadLevel(_sceneName);
+        }
+
+    }
 }

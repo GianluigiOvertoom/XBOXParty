@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Node : MonoBehaviour
+namespace Board
 {
-    [SerializeField]
-    private Node _nextNode;
-    public Node NextNode
+    public class Node : MonoBehaviour
     {
-        get { return _nextNode; }
+        [SerializeField]
+        private Node _nextNode;
+        public Node NextNode
+        {
+            get { return _nextNode; }
+        }
     }
 }
