@@ -1,14 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 
 public class BoardManager : MonoBehaviour
 {
     [SerializeField]
-    private List<Texture2D> _logoTextures;
+    private Image _logoImage;
+
+    [SerializeField]
+    private SpriteRenderer _boardImage;
+
+    [SerializeField]
+    private List<Sprite> _logoSprites;
     
     [SerializeField]
-    private List<Texture2D> _boardTextures;
+    private List<Sprite> _boardSprites;
 
     [SerializeField]
     private List<Node> _nodes;
@@ -16,11 +23,11 @@ public class BoardManager : MonoBehaviour
 	// Use this for initialization
 	private void Awake()
     {
-        //Shuffle my lists again with the global seed
-        //_logoTextures.Shuffle();
-        //_boardTextures.Shuffle();
+        int rand = Random.Range(0, _logoSprites.Count);
+        _logoImage.sprite = _logoSprites[rand];
 
-        //Set the textures to the first one in the list
+        rand = Random.Range(0, _boardSprites.Count);
+        _boardImage.sprite = _boardSprites[rand];
 	}
 
     public Node GetNode(int id)
@@ -29,5 +36,16 @@ public class BoardManager : MonoBehaviour
             return null;
 
         return _nodes[id];
+    }
+
+    public int GetNodeId(Node node)
+    {
+        for (int i = 0; i < _nodes.Count; ++i)
+        {
+            if (_nodes[i] == node)
+                return i;
+        }
+
+        return -1;
     }
 }

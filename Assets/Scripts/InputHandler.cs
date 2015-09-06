@@ -5,9 +5,9 @@ public class InputHandler : MonoBehaviour
 {
 	private void Update ()
     {
-        GameState state = GlobalGameManager.Instance.GetGameState();
+        GameState state = GlobalGameManager.Instance.GameState;
 
-	    if (Input.GetButtonUp("Player0_A"))
+	    if (Input.GetButtonUp("Player0_Start"))
         {
             switch (state)
             {
@@ -17,6 +17,10 @@ public class InputHandler : MonoBehaviour
 
                 case GameState.STATE_BOARD:
                     GlobalGameManager.Instance.StartMinigame();
+                    break;
+
+                case GameState.STATE_RESULTMENU:
+                    GlobalGameManager.Instance.ResetGame();
                     break;
             }
         }

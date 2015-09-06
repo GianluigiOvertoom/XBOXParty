@@ -3,14 +3,35 @@ using System.Collections;
 
 public class Pawn : MonoBehaviour
 {
+    [SerializeField]
+    private float _speed = 1.0f;
+
     private Node _currentNode;
-    VoidDelegate _callback;
+    public Node CurrentNode
+    {
+        get { return _currentNode; }
+    }
+
+    private VoidDelegate _callback;
     private int _nodesLeft = 0;
+    private Vector3 _offset;
 
     public void SetCurrentNode(Node node)
     {
         _currentNode = node;
-        transform.position = _currentNode.transform.position;
+        transform.position = _currentNode.transform.position + _offset;
+    }
+
+    public void SetOrderInLayer(int order)
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+            spriteRenderer.sortingOrder = order;
+    }
+
+    public void SetOffset(Vector3 offset)
+    {
+        _offset = offset;
     }
 
     public void SetColor(Color color)
@@ -39,7 +60,7 @@ public class Pawn : MonoBehaviour
             return;
         }
 
-        StartCoroutine(MoveRoutine(_currentNode.transform.position));
+        StartCoroutine(MoveRoutine(_currentNode.transform.position + _offset));
     }
 
     private void MoveComplete()
@@ -72,11 +93,16 @@ public class Pawn : MonoBehaviour
         {
             transform.position = Vector3.Lerp(startPosition, targetPosition, timer);
 
-            timer = Mathf.Clamp01(timer + Time.deltaTime);
+            timer = Mathf.Clamp01(timer + (Time.deltaTime * _speed));
             yield return new WaitForEndOfFrame();
         }
 
         MoveComplete();
         yield return null;
+    }
+
+    public bool IsOnLastNode()
+    {
+        return (_currentNode.NextNode == null);
     }
 }
