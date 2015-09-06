@@ -167,6 +167,7 @@ namespace Board
 
         private List<int> SortPawns(bool sortOnAddedPositions)
         {
+            //Keep out please, even I have to deal with deadlines :)
             List<KeyValuePair<int, int>> tempList = new List<KeyValuePair<int, int>>();
             for (int i = 0; i < _pawns.Count; ++i)
             {
