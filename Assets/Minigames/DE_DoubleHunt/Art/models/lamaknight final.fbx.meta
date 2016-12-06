@@ -1,0 +1,291 @@
+fileFormatVersion: 2
+guid: 720c7d667509163488a26ebad5ad6eed
+timeCreated: 1478027604
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: ass
+    100002: base
+    100004: chest
+    100006: Head
+    100008: head
+    100010: KL
+    100012: KL 1
+    100014: Knight
+    100016: knight
+    100018: knight2
+    100020: knight_butt
+    100022: knight_chest
+    100024: knight_L_elbow
+    100026: knight_L_hand
+    100028: Knight_L_Shoulder
+    100030: knight_neck
+    100032: knight_R_elbow
+    100034: knight_R_hand
+    100036: knight_R_Shoulder
+    100038: knight_visor
+    100040: KR
+    100042: KR 1
+    100044: L_hip
+    100046: L_shoulder
+    100048: //RootNode
+    100050: LB
+    100052: LB 1
+    100054: LB_lower
+    100056: LB_upper
+    100058: LF
+    100060: LF 1
+    100062: LF_lower
+    100064: LF_upper
+    100066: middle
+    100068: neck
+    100070: R_hip
+    100072: R_shoulder
+    100074: RB
+    100076: RB 1
+    100078: RB_lower
+    100080: RB_upper
+    100082: RF
+    100084: RF 1
+    100086: RF_lower
+    100088: RF_uppper
+    100090: root
+    100092: transform1
+    400000: ass
+    400002: base
+    400004: chest
+    400006: Head
+    400008: head
+    400010: KL
+    400012: KL 1
+    400014: Knight
+    400016: knight
+    400018: knight2
+    400020: knight_butt
+    400022: knight_chest
+    400024: knight_L_elbow
+    400026: knight_L_hand
+    400028: Knight_L_Shoulder
+    400030: knight_neck
+    400032: knight_R_elbow
+    400034: knight_R_hand
+    400036: knight_R_Shoulder
+    400038: knight_visor
+    400040: KR
+    400042: KR 1
+    400044: L_hip
+    400046: L_shoulder
+    400048: //RootNode
+    400050: LB
+    400052: LB 1
+    400054: LB_lower
+    400056: LB_upper
+    400058: LF
+    400060: LF 1
+    400062: LF_lower
+    400064: LF_upper
+    400066: middle
+    400068: neck
+    400070: R_hip
+    400072: R_shoulder
+    400074: RB
+    400076: RB 1
+    400078: RB_lower
+    400080: RB_upper
+    400082: RF
+    400084: RF 1
+    400086: RF_lower
+    400088: RF_uppper
+    400090: root
+    400092: transform1
+    4300000: knight2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: knight2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: base
+        weight: 1
+      - path: base/transform1
+        weight: 1
+      - path: base/transform1/root
+        weight: 1
+      - path: base/transform1/root/middle
+        weight: 1
+      - path: base/transform1/root/middle/ass
+        weight: 1
+      - path: base/transform1/root/middle/ass/L_hip
+        weight: 1
+      - path: base/transform1/root/middle/ass/L_hip/LB_upper
+        weight: 1
+      - path: base/transform1/root/middle/ass/L_hip/LB_upper/LB_lower
+        weight: 1
+      - path: base/transform1/root/middle/ass/R_hip
+        weight: 1
+      - path: base/transform1/root/middle/ass/R_hip/RB_upper
+        weight: 1
+      - path: base/transform1/root/middle/ass/R_hip/RB_upper/RB_lower
+        weight: 1
+      - path: base/transform1/root/middle/chest
+        weight: 1
+      - path: base/transform1/root/middle/chest/L_shoulder
+        weight: 1
+      - path: base/transform1/root/middle/chest/L_shoulder/LF_upper
+        weight: 1
+      - path: base/transform1/root/middle/chest/L_shoulder/LF_upper/LF_lower
+        weight: 1
+      - path: base/transform1/root/middle/chest/neck
+        weight: 1
+      - path: base/transform1/root/middle/chest/neck/head
+        weight: 1
+      - path: base/transform1/root/middle/chest/R_shoulder
+        weight: 1
+      - path: base/transform1/root/middle/chest/R_shoulder/RF_uppper
+        weight: 1
+      - path: base/transform1/root/middle/chest/R_shoulder/RF_uppper/RF_lower
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/Knight_L_Shoulder
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/Knight_L_Shoulder/knight_L_elbow
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/Knight_L_Shoulder/knight_L_elbow/knight_L_hand
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/knight_neck
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/knight_neck/knight_visor
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/knight_R_Shoulder
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/knight_R_Shoulder/knight_R_elbow
+        weight: 1
+      - path: base/transform1/root/middle/knight_butt/knight_chest/knight_R_Shoulder/knight_R_elbow/knight_R_hand
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: KL
+        weight: 1
+      - path: KL/KL 1
+        weight: 1
+      - path: Knight
+        weight: 1
+      - path: Knight/knight
+        weight: 1
+      - path: knight2
+        weight: 1
+      - path: KR
+        weight: 1
+      - path: KR/KR 1
+        weight: 1
+      - path: LB
+        weight: 1
+      - path: LB/LB 1
+        weight: 1
+      - path: LF
+        weight: 1
+      - path: LF/LF 1
+        weight: 1
+      - path: RB
+        weight: 1
+      - path: RB/RB 1
+        weight: 1
+      - path: RF
+        weight: 1
+      - path: RF/RF 1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
