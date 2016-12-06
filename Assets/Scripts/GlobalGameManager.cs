@@ -2,8 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine.SceneManagement;
 
-namespace Board
+namespace XBOXParty
 {
     public delegate void VoidDelegate();
     public delegate void IntListDelegate(List<int> intList);
@@ -46,6 +47,7 @@ namespace Board
         }
 
         private bool _canStartMinigame = true;
+        private int _currentMinigameID = -1;
 
         private List<int> _currentPawnPositions;
         private List<int> _addedPawnPositions;
@@ -87,21 +89,19 @@ namespace Board
         protected override void Awake()
         {
             base.Awake();
-            DontDestroyOnLoad(gameObject);
-
             _gameState = GameState.STATE_MAINMENU;
         }
 
         private void InitializePawnPositions(int playerCount)
         {
-            if (_currentPawnPositions != null) _currentPawnPositions.Clear();
-            else _currentPawnPositions = new List<int>();
+            if (_currentPawnPositions != null)  _currentPawnPositions.Clear();
+            else                                _currentPawnPositions = new List<int>();
 
             for (int i = 0; i < playerCount; ++i)
                 _currentPawnPositions.Add(0);
 
             if (_addedPawnPositions != null) _addedPawnPositions.Clear();
-            else _addedPawnPositions = new List<int>();
+            else                             _addedPawnPositions = new List<int>();
 
             for (int i = 0; i < playerCount; ++i)
                 _addedPawnPositions.Add(0);
@@ -157,7 +157,13 @@ namespace Board
             if (_gameState != GameState.STATE_RESULTMENU)
                 return;
 
+            HardResetGame();
+        }
+
+        public void HardResetGame()
+        {
             _gameState = GameState.STATE_MAINMENU;
+            _playerCount = 0;
 
             if (_resetGameEvent != null)
                 _resetGameEvent();
@@ -219,6 +225,16 @@ namespace Board
                 _minigameStartEvent();
         }
 
+        public void SetCurrentMinigameID(int id)
+        {
+            _currentMinigameID = id;
+        }
+
+        public int GetCurrentMinigameID()
+        {
+            return _currentMinigameID;
+        }
+
         //Used by the minigames
         public void SubmitGameResults(List<int> results)
         {
@@ -253,7 +269,8 @@ namespace Board
 
             //Go back to the board
             _gameState = GameState.STATE_BOARD;
-            Application.LoadLevel(_boardLevelID);
+
+            SceneManager.LoadScene(_boardLevelID);
         }
 
         public int GetPlayerTeamID(int playerID, MinigameMode minigameMode)
@@ -264,31 +281,29 @@ namespace Board
             switch (minigameMode)
             {
                 case MinigameMode.MODE_FFA:
-                    {
-                        return playerID;
-                    }
+                {
+                    return playerID;
+                }
 
                 case MinigameMode.MODE_2V2:
-                    {
-                        //If you're the first or the last, you're in the same team.
-                        if (playerID == sortedPlayerList[0] || playerID == sortedPlayerList[sortedPlayerList.Count - 1])
-                            return 0;
-                        else
-                            return 1;
-                    }
+                {
+                    //If you're the first or the last, you're in the same team.
+                    if (playerID == sortedPlayerList[0] || playerID == sortedPlayerList[sortedPlayerList.Count - 1])
+                        return 0;
+                    else
+                        return 1;
+                }
 
                 case MinigameMode.MODE_1V3:
-                    {
-                        if (playerID == sortedPlayerList[0])
-                            return 0;
-                        else
-                            return 1;
-                    }
+                {
+                    if (playerID == sortedPlayerList[0])
+                        return 0;
+                    else
+                        return 1;
+                }
 
                 default:
-                    {
-                        return 0;
-                    }
+                    return 0;
             }
         }
 

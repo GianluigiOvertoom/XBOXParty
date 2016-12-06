@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-namespace Board
+namespace XBOXParty
 {
     public class Singleton<T> : MonoBehaviour where T : Component
     {

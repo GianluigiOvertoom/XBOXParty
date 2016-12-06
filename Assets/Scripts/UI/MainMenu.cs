@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using XBOXParty;
 
 namespace Board
 {
@@ -17,6 +18,9 @@ namespace Board
             {
                 Hide();
             }
+
+            //Bind button
+            InputManager.Instance.BindButton("Board_StartGame", 0, ControllerButtonCode.Start, ButtonState.OnPress);
         }
 
         private void OnDestroy()
@@ -25,6 +29,19 @@ namespace Board
             {
                 GlobalGameManager.Instance.GameStartEvent -= OnGameStart;
                 GlobalGameManager.Instance.ResetGameEvent -= OnResetGame;
+            }
+
+            InputManager.Instance.UnbindButton("Board_StartGame");
+        }
+
+        private void Update()
+        {
+            if (GlobalGameManager.Instance.PlayerCount < 2)
+                return;
+
+            if (InputManager.Instance.GetButton("Board_StartGame"))
+            {
+                StartGame();
             }
         }
 
@@ -36,6 +53,7 @@ namespace Board
         private void OnResetGame()
         {
             Show();
+            _pressStart.SetActive(false);
         }
 
         private void Show()

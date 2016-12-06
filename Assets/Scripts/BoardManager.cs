@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using XBOXParty;
 
 namespace Board
 {
@@ -25,11 +26,13 @@ namespace Board
         // Use this for initialization
         private void Awake()
         {
-            int rand = Random.Range(0, _logoSprites.Count);
-            _logoImage.sprite = _logoSprites[rand];
+            int lastMinigame = GlobalGameManager.Instance.GetCurrentMinigameID();
 
-            rand = Random.Range(0, _boardSprites.Count);
-            _boardImage.sprite = _boardSprites[rand];
+            if (lastMinigame == -1)
+                lastMinigame = Random.Range(0, _logoSprites.Count);
+
+            _logoImage.sprite = _logoSprites[lastMinigame];
+            _boardImage.sprite = _boardSprites[lastMinigame];
         }
 
         public Node GetNode(int id)

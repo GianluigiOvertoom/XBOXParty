@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
-namespace Board
+namespace XBOXParty
 {
     public enum MinigameMode
     {
@@ -45,7 +46,8 @@ namespace Board
 
             if (_debugMinigame != "")
             {
-                Application.LoadLevel(_debugMinigame);
+                GlobalGameManager.Instance.SetCurrentMinigameID(-1);
+                SceneManager.LoadScene(_debugMinigame);
                 return;
             }
 
@@ -61,32 +63,37 @@ namespace Board
             }
 
             //Determine the level
-            switch (gameMode)
+            int minigameID = 0;
+
+            switch ((MinigameMode)gameMode)
             {
-                case (int)MinigameMode.MODE_FFA:
-                    {
-                        int minigameID = Random.Range(0, _minigamesFFA.Count);
-                        levelName = _minigamesFFA[minigameID];
-                        break;
-                    }
+                case MinigameMode.MODE_FFA:
+                {
+                    minigameID = Random.Range(0, _minigamesFFA.Count);
+                    levelName = _minigamesFFA[minigameID];
+                    break;
+                }
 
-                case (int)MinigameMode.MODE_2V2:
-                    {
-                        int minigameID = Random.Range(0, _minigames2v2.Count);
-                        levelName = _minigamesFFA[minigameID];
-                        break;
-                    }
+                case MinigameMode.MODE_2V2:
+                {
+                    minigameID = Random.Range(0, _minigames2v2.Count);
+                    levelName = _minigamesFFA[minigameID];
+                    break;
+                }
 
-                case (int)MinigameMode.MODE_1V3:
-                    {
-                        int minigameID = Random.Range(0, _minigames1v3.Count);
-                        levelName = _minigamesFFA[minigameID];
-                        break;
-                    }
+                case MinigameMode.MODE_1V3:
+                {
+                    minigameID = Random.Range(0, _minigames1v3.Count);
+                    levelName = _minigamesFFA[minigameID];
+                    break;
+                }
 
+                default:
+                    break;
             }
 
-            Application.LoadLevel(levelName);
+            GlobalGameManager.Instance.SetCurrentMinigameID(minigameID);
+            SceneManager.LoadScene(levelName);
         }
     }
 }

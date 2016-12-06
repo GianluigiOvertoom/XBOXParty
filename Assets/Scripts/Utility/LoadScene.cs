@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 namespace Board
 {
@@ -10,7 +11,8 @@ namespace Board
 
         void Start()
         {
-            Application.LoadLevel(_sceneName);
+            SceneManager.LoadScene(_sceneName);
+            //Application.LoadLevel(_sceneName);
         }
 
     }

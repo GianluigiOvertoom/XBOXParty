@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Board;
+using XBOXParty;
 
 namespace TemplateGame
 {
@@ -18,6 +18,22 @@ namespace TemplateGame
             for (int i = 0; i < playerCount; ++i)
             {
                 _positions.Add(i);
+            }
+
+            //Bind button
+            InputManager.Instance.BindButton("TemplateGame_Submit", 0, ControllerButtonCode.A, ButtonState.OnPress);
+        }
+
+        private void OnDestroy()
+        {
+            InputManager.Instance.UnbindButton("TemplateGame_Submit");
+        }
+
+        public void Update()
+        {
+            if (InputManager.Instance.GetButton("TemplateGame_Submit"))
+            {
+                Submit();
             }
         }
 
