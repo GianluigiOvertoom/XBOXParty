@@ -24,11 +24,6 @@ namespace TemplateGame
             InputManager.Instance.BindButton("TemplateGame_Submit", 0, ControllerButtonCode.A, ButtonState.OnPress);
         }
 
-        private void OnDestroy()
-        {
-            InputManager.Instance.UnbindButton("TemplateGame_Submit");
-        }
-
         public void Update()
         {
             if (InputManager.Instance.GetButton("TemplateGame_Submit"))

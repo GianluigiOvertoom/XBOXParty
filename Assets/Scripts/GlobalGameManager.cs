@@ -244,17 +244,17 @@ namespace XBOXParty
             //Copy results
             if (_addedPawnPositions.Count < results.Count)
             {
-                Debug.Log("Received more results than active players!");
-                return;
+                Debug.LogWarning("Received more results than active players!");
+                //return;
             }
 
             if (_addedPawnPositions.Count > results.Count)
             {
-                Debug.Log("Received less results than active players!");
-                return;
+                Debug.LogWarning("Received less results than active players!");
+                //return;
             }
 
-            for (int i = 0; i < results.Count; ++i)
+            for (int i = 0; i < _addedPawnPositions.Count; ++i) //don't count until the results, otherwise we can only test with the correct amount of players
             {
                 if (results[i] >= _numStepsAwarded.Count)
                 {
