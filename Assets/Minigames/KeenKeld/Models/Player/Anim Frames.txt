@@ -1,0 +1,6 @@
+Idle: 1 - 10
+Walk: 20 - 50
+Jump: 60 - 72
+jump Attack: 80 - 90
+Dab: 100 - 120 
+

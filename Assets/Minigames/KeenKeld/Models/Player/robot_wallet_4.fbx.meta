@@ -1,0 +1,1272 @@
+fileFormatVersion: 2
+guid: ab562e83ffebd6e449ca32a9f9e69a74
+timeCreated: 1476356769
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Eye
+    100002: Foot_Left
+    100004: Foot_Right
+    100006: Hand_Left
+    100008: Hand_Right
+    100010: Hat
+    100012: Head
+    100014: head_joint
+    100016: ikHandle1
+    100018: ikHandle2
+    100020: ikHandle3
+    100022: ikHandle4
+    100024: ikHandle5
+    100026: ikHandle6
+    100028: ikHandle7
+    100030: ikHandle8
+    100032: leftfoot__joint
+    100034: lefthand_joint
+    100036: leftlowerarm_joint
+    100038: leftlowerfinger_joint
+    100040: leftlowerleg_joint
+    100042: lefttoe_joint
+    100044: leftupperarm_joint
+    100046: leftupperfinger_joint
+    100048: leftupperleg_joint
+    100050: Lower_Arm_Left
+    100052: Lower_Arm_Right
+    100054: Lower_Body
+    100056: Lower_Claw_Left
+    100058: Lower_Claw_Right
+    100060: Lower_Leg_Left
+    100062: Lower_Leg_Right
+    100064: Neck
+    100066: nurbsCircle1
+    100068: nurbsCircle2
+    100070: nurbsCircle3
+    100072: nurbsCircle4
+    100074: nurbsCircle5
+    100076: pSphere7
+    100078: rightfoor_joint
+    100080: righthand_joint
+    100082: rightlowerarm_joint
+    100084: rightlowerfinger_joint
+    100086: rightlowerleg_joint
+    100088: righttoe_joint
+    100090: rightupperarm_joint
+    100092: rightupperfinger_joint
+    100094: rightupperleg_joint
+    100096: //RootNode
+    100098: root_joint
+    100100: transform2
+    100102: Upper_Arm_Left
+    100104: Upper_Arm_Right
+    100106: Upper_Body
+    100108: Upper_Claw_Left
+    100110: Upper_Claw_Right
+    100112: Upper_Leg_Left
+    100114: Upper_Leg_Right
+    400000: Eye
+    400002: Foot_Left
+    400004: Foot_Right
+    400006: Hand_Left
+    400008: Hand_Right
+    400010: Hat
+    400012: Head
+    400014: head_joint
+    400016: ikHandle1
+    400018: ikHandle2
+    400020: ikHandle3
+    400022: ikHandle4
+    400024: ikHandle5
+    400026: ikHandle6
+    400028: ikHandle7
+    400030: ikHandle8
+    400032: leftfoot__joint
+    400034: lefthand_joint
+    400036: leftlowerarm_joint
+    400038: leftlowerfinger_joint
+    400040: leftlowerleg_joint
+    400042: lefttoe_joint
+    400044: leftupperarm_joint
+    400046: leftupperfinger_joint
+    400048: leftupperleg_joint
+    400050: Lower_Arm_Left
+    400052: Lower_Arm_Right
+    400054: Lower_Body
+    400056: Lower_Claw_Left
+    400058: Lower_Claw_Right
+    400060: Lower_Leg_Left
+    400062: Lower_Leg_Right
+    400064: Neck
+    400066: nurbsCircle1
+    400068: nurbsCircle2
+    400070: nurbsCircle3
+    400072: nurbsCircle4
+    400074: nurbsCircle5
+    400076: pSphere7
+    400078: rightfoor_joint
+    400080: righthand_joint
+    400082: rightlowerarm_joint
+    400084: rightlowerfinger_joint
+    400086: rightlowerleg_joint
+    400088: righttoe_joint
+    400090: rightupperarm_joint
+    400092: rightupperfinger_joint
+    400094: rightupperleg_joint
+    400096: //RootNode
+    400098: root_joint
+    400100: transform2
+    400102: Upper_Arm_Left
+    400104: Upper_Arm_Right
+    400106: Upper_Body
+    400108: Upper_Claw_Left
+    400110: Upper_Claw_Right
+    400112: Upper_Leg_Left
+    400114: Upper_Leg_Right
+    2300000: Eye
+    2300002: Foot_Left
+    2300004: Foot_Right
+    2300006: Hand_Left
+    2300008: Hand_Right
+    2300010: Hat
+    2300012: Head
+    2300014: Lower_Arm_Left
+    2300016: Lower_Arm_Right
+    2300018: Lower_Body
+    2300020: Lower_Claw_Left
+    2300022: Lower_Claw_Right
+    2300024: Lower_Leg_Left
+    2300026: Lower_Leg_Right
+    2300028: Neck
+    2300030: pSphere7
+    2300032: Upper_Arm_Left
+    2300034: Upper_Arm_Right
+    2300036: Upper_Body
+    2300038: Upper_Claw_Left
+    2300040: Upper_Claw_Right
+    2300042: Upper_Leg_Left
+    2300044: Upper_Leg_Right
+    3300000: Eye
+    3300002: Foot_Left
+    3300004: Foot_Right
+    3300006: Hand_Left
+    3300008: Hand_Right
+    3300010: Hat
+    3300012: Head
+    3300014: Lower_Arm_Left
+    3300016: Lower_Arm_Right
+    3300018: Lower_Body
+    3300020: Lower_Claw_Left
+    3300022: Lower_Claw_Right
+    3300024: Lower_Leg_Left
+    3300026: Lower_Leg_Right
+    3300028: Neck
+    3300030: pSphere7
+    3300032: Upper_Arm_Left
+    3300034: Upper_Arm_Right
+    3300036: Upper_Body
+    3300038: Upper_Claw_Left
+    3300040: Upper_Claw_Right
+    3300042: Upper_Leg_Left
+    3300044: Upper_Leg_Right
+    4300000: pSphere7
+    4300002: Foot_Right
+    4300004: Lower_Leg_Right
+    4300006: Upper_Leg_Right
+    4300008: Head
+    4300010: Eye
+    4300012: Hat
+    4300014: Foot_Left
+    4300016: Lower_Leg_Left
+    4300018: Upper_Leg_Left
+    4300020: Lower_Claw_Right
+    4300022: Upper_Claw_Right
+    4300024: Hand_Right
+    4300026: Lower_Arm_Right
+    4300028: Upper_Arm_Right
+    4300030: Lower_Claw_Left
+    4300032: Upper_Claw_Left
+    4300034: Hand_Left
+    4300036: Lower_Arm_Left
+    4300038: Upper_Arm_Left
+    4300040: Upper_Body
+    4300042: Lower_Body
+    4300044: Neck
+    7400000: FULL
+    7400002: Idle
+    7400004: Walk
+    7400006: Jump
+    7400008: JumpAttack
+    7400010: Dab
+    7400012: MidAir
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: FULL
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Walk
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 60
+      lastFrame: 72
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: JumpAttack
+      takeName: Take 001
+      firstFrame: 80
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: Dab
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 120
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    - serializedVersion: 16
+      name: MidAir
+      takeName: Take 001
+      firstFrame: 72
+      lastFrame: 73
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: nurbsCircle1
+        weight: 1
+      - path: nurbsCircle1/ikHandle3
+        weight: 1
+      - path: nurbsCircle1/ikHandle4
+        weight: 1
+      - path: nurbsCircle2
+        weight: 1
+      - path: nurbsCircle2/ikHandle1
+        weight: 1
+      - path: nurbsCircle2/ikHandle2
+        weight: 1
+      - path: nurbsCircle3
+        weight: 1
+      - path: nurbsCircle3/transform2
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Eye
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/head_joint/Head/Hat
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/Hand_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftlowerfinger_joint/Lower_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/lefthand_joint/leftupperfinger_joint/Upper_Claw_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/leftlowerarm_joint/Lower_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperarm_joint/Upper_Arm_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/Foot_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/leftfoot__joint/lefttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/leftlowerleg_joint/Lower_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/leftupperleg_joint/Upper_Leg_Left
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/Lower_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/Hand_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightlowerfinger_joint/Lower_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/rightlowerarm_joint/righthand_joint/rightupperfinger_joint/Upper_Claw_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperarm_joint/Upper_Arm_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/Lower_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/Foot_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/rightlowerleg_joint/rightfoor_joint/righttoe_joint
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/rightupperleg_joint/Upper_Leg_Right
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body
+        weight: 1
+      - path: nurbsCircle3/transform2/root_joint/Upper_Body/Lower_Body/Neck
+        weight: 1
+      - path: nurbsCircle4
+        weight: 1
+      - path: nurbsCircle4/ikHandle7
+        weight: 1
+      - path: nurbsCircle4/ikHandle8
+        weight: 1
+      - path: nurbsCircle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle5
+        weight: 1
+      - path: nurbsCircle5/ikHandle6
+        weight: 1
+      - path: pSphere7
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 35
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
