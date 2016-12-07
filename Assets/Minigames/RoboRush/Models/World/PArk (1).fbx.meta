@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 78907cbe7a88f324f96daac8d9e55519
+timeCreated: 1478515717
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Compound
+    100002: Matrix_14_part
+    100004: Matrix_14_part_1
+    100006: Matrix_14_part_10
+    100008: Matrix_14_part_11
+    100010: Matrix_14_part_2
+    100012: Matrix_14_part_3
+    100014: Matrix_14_part_4
+    100016: Matrix_14_part_5
+    100018: Matrix_14_part_6
+    100020: Matrix_14_part_7
+    100022: Matrix_14_part_8
+    100024: Matrix_14_part_9
+    100026: //RootNode
+    100028: Park1_1_part
+    100030: Park2_part
+    100032: Park3_part
+    400000: Compound
+    400002: Matrix_14_part
+    400004: Matrix_14_part_1
+    400006: Matrix_14_part_10
+    400008: Matrix_14_part_11
+    400010: Matrix_14_part_2
+    400012: Matrix_14_part_3
+    400014: Matrix_14_part_4
+    400016: Matrix_14_part_5
+    400018: Matrix_14_part_6
+    400020: Matrix_14_part_7
+    400022: Matrix_14_part_8
+    400024: Matrix_14_part_9
+    400026: //RootNode
+    400028: Park1_1_part
+    400030: Park2_part
+    400032: Park3_part
+    2300000: Compound
+    2300002: Matrix_14_part
+    2300004: Matrix_14_part_1
+    2300006: Matrix_14_part_10
+    2300008: Matrix_14_part_11
+    2300010: Matrix_14_part_2
+    2300012: Matrix_14_part_3
+    2300014: Matrix_14_part_4
+    2300016: Matrix_14_part_5
+    2300018: Matrix_14_part_6
+    2300020: Matrix_14_part_7
+    2300022: Matrix_14_part_8
+    2300024: Matrix_14_part_9
+    2300026: Park1_1_part
+    2300028: Park2_part
+    2300030: Park3_part
+    3300000: Compound
+    3300002: Matrix_14_part
+    3300004: Matrix_14_part_1
+    3300006: Matrix_14_part_10
+    3300008: Matrix_14_part_11
+    3300010: Matrix_14_part_2
+    3300012: Matrix_14_part_3
+    3300014: Matrix_14_part_4
+    3300016: Matrix_14_part_5
+    3300018: Matrix_14_part_6
+    3300020: Matrix_14_part_7
+    3300022: Matrix_14_part_8
+    3300024: Matrix_14_part_9
+    3300026: Park1_1_part
+    3300028: Park2_part
+    3300030: Park3_part
+    4300000: Park2_part
+    4300002: Park1_1_part
+    4300004: Park3_part
+    4300006: Matrix_14_part_5
+    4300008: Matrix_14_part_4
+    4300010: Matrix_14_part_3
+    4300012: Matrix_14_part_2
+    4300014: Matrix_14_part_1
+    4300016: Matrix_14_part
+    4300018: Matrix_14_part_6
+    4300020: Matrix_14_part_7
+    4300022: Matrix_14_part_8
+    4300024: Matrix_14_part_9
+    4300026: Matrix_14_part_10
+    4300028: Matrix_14_part_11
+    4300030: Compound
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

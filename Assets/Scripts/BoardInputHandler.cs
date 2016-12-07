@@ -9,21 +9,37 @@ namespace Board
         private void Start()
         {
             //Bind button
-            InputManager.Instance.BindButton("Board_Submit", 0, ControllerButtonCode.A, ButtonState.OnPress);
-            InputManager.Instance.BindButton("Board_Reset", 0, ControllerButtonCode.Back, ButtonState.OnPress);
+            for (int i = 0; i < 4; ++i)
+            {
+                InputManager.Instance.BindButton("Board_Submit_" + i, i, ControllerButtonCode.A, ButtonState.OnPress);
+                InputManager.Instance.BindButton("Board_Reset_" + i, i, ControllerButtonCode.Back, ButtonState.OnPress);
+            }
         }
 
         private void OnDestroy()
         {
-            InputManager.Instance.UnbindButton("Board_Submit");
-            InputManager.Instance.UnbindButton("Board_Reset");
+            for (int i = 0; i < 4; ++i)
+            {
+                InputManager.Instance.UnbindButton("Board_Submit_" + i);
+                InputManager.Instance.UnbindButton("Board_Reset_" + i);
+            }
         }
 
         private void Update()
         {
             GameState state = GlobalGameManager.Instance.GameState;
 
-            if (InputManager.Instance.GetButton("Board_Submit"))
+            bool pressedSubmit = false;
+            bool pressedReset = false;
+
+            for (int i = 0; i < 4; ++i)
+            {
+                if (InputManager.Instance.GetButton("Board_Submit_" + i)) { pressedSubmit = true; }
+                if (InputManager.Instance.GetButton("Board_Reset_" + i))  { pressedReset = true; }
+
+            }
+
+            if (pressedSubmit)
             {
                 switch (state)
                 {
@@ -44,7 +60,7 @@ namespace Board
                 }
             }
 
-            if (InputManager.Instance.GetButton("Board_Reset"))
+            if (pressedReset)
             {
                 GlobalGameManager.Instance.HardResetGame();
             }

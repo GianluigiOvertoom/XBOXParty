@@ -19,8 +19,11 @@ namespace Board
                 Hide();
             }
 
-            //Bind button
-            InputManager.Instance.BindButton("Board_StartGame", 0, ControllerButtonCode.Start, ButtonState.OnPress);
+            //Bind buttons
+            for (int i = 0; i < 4; ++i)
+            {
+                InputManager.Instance.BindButton("Board_StartGame_" + i, i, ControllerButtonCode.Start, ButtonState.OnPress);
+            }
         }
 
         private void OnDestroy()
@@ -31,7 +34,10 @@ namespace Board
                 GlobalGameManager.Instance.ResetGameEvent -= OnResetGame;
             }
 
-            InputManager.Instance.UnbindButton("Board_StartGame");
+            for (int i = 0; i < 4; ++i)
+            {
+                InputManager.Instance.UnbindButton("Board_StartGame_" + i);
+            }
         }
 
         private void Update()
@@ -39,9 +45,13 @@ namespace Board
             if (GlobalGameManager.Instance.PlayerCount < 2)
                 return;
 
-            if (InputManager.Instance.GetButton("Board_StartGame"))
+            for (int i = 0; i < 4; ++i)
             {
-                StartGame();
+                if (InputManager.Instance.GetButton("Board_StartGame_" + i))
+                {
+                    StartGame();
+                    return;
+                }
             }
         }
 
