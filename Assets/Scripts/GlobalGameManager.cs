@@ -241,28 +241,32 @@ namespace XBOXParty
             if (_gameState != GameState.STATE_MINIGAME)
                 return;
 
-            //Copy results
-            if (_addedPawnPositions.Count < results.Count)
+            //Minigame skipped
+            if (results != null)
             {
-                Debug.LogWarning("Received more results than active players!");
-                //return;
-            }
+                if (_addedPawnPositions.Count < results.Count)
+                {
+                    Debug.LogWarning("Received more results than active players!");
+                }
 
-            if (_addedPawnPositions.Count > results.Count)
-            {
-                Debug.LogWarning("Received less results than active players!");
-                //return;
+                if (_addedPawnPositions.Count > results.Count)
+                {
+                    Debug.LogWarning("Received less results than active players!");
+                }
             }
 
             for (int i = 0; i < _addedPawnPositions.Count; ++i) //don't count until the results, otherwise we can only test with the correct amount of players
             {
-                if (results[i] >= _numStepsAwarded.Count)
+                int result = 0;
+                if (results != null) { result = results[i]; }
+
+                if (result >= _numStepsAwarded.Count)
                 {
                     _addedPawnPositions[i] = 1;
                 }
                 else
                 {
-                    _addedPawnPositions[i] = _numStepsAwarded[results[i]];
+                    _addedPawnPositions[i] = _numStepsAwarded[result];
                     Debug.Log("Player " + i + " advanced " + _addedPawnPositions[i] + " step(s)!");
                 }
             }

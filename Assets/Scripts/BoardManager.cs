@@ -20,12 +20,18 @@ namespace Board
         // Use this for initialization
         private void Awake()
         {
+            //For students who use this to pause their game...
+            Time.timeScale = 1.0f;
+
             MinigameData lastMinigame = GlobalGameManager.Instance.GetCurrentMinigame();
 
             if (lastMinigame != null)
             {
-                m_LogoImage.sprite = lastMinigame.Logo;
-                m_BoardImage.sprite = lastMinigame.Background;
+                if (lastMinigame.Logo != null)
+                    m_LogoImage.sprite = lastMinigame.Logo;
+
+                if (lastMinigame.Background != null)
+                    m_BoardImage.sprite = lastMinigame.Background;
             }
         }
 

@@ -62,7 +62,15 @@ namespace Board
 
             if (pressedReset)
             {
-                GlobalGameManager.Instance.HardResetGame();
+                switch (state)
+                {
+                    case GameState.STATE_BOARD:
+                        GlobalGameManager.Instance.HardResetGame();
+                        break;
+
+                    default:
+                        break;
+                }
             }
         }
     }

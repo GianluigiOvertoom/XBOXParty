@@ -43,16 +43,22 @@ namespace XBOXParty
 
             foreach(MinigameData data in m_Minigames)
             {
-                if (data.GameMode == MinigameMode.MODE_FFA)
+                //Never play the same game twice
+                if (GlobalGameManager.Instance.GetCurrentMinigame() != data)
                 {
-                    playableMinigames.Add(data);
-                }
-                else
-                {
-                    //Only play 2v2 & 1v3 if it's a 4 player game.
-                    if (GlobalGameManager.Instance.PlayerCount >= 4)
+                    //Always be able to play FFA
+                    if (data.GameMode == MinigameMode.MODE_FFA)
                     {
                         playableMinigames.Add(data);
+                    }
+
+                    //Only play 2v2 & 1v3 if it's a 4 player game.
+                    else
+                    {
+                        if (GlobalGameManager.Instance.PlayerCount >= 4)
+                        {
+                            playableMinigames.Add(data);
+                        }
                     }
                 }
             }
