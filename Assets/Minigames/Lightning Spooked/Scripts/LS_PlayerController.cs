@@ -50,7 +50,6 @@ namespace LightningSpooked
         //Gets called when game is started after the awake.
         private void Start()
         {
-
             //Get the miniGameController.
             LS_miniGameController = FindObjectOfType<LS_MinigameController>();
 
@@ -73,8 +72,38 @@ namespace LightningSpooked
 
             //Set a default state.
             LS_playerState = LS_PlayerState.idle;
+
+            if (DestroyIfUnwanted())
+                return;
         }
 
+        private bool DestroyIfUnwanted()
+        {
+            //Super cheap code added by Stijn to make sure this can also be played with 2 or 3 players
+            int playerCount = GlobalGameManager.Instance.PlayerCount;
+
+            if (gameObject.name == "LS_Player4" && playerCount < 4)
+            {
+                getSetLS_playerHP = 0;
+
+                LS_miniGameController.SetPlayerDeathsInListAndSubmitScore(LS_controllerIndex);
+                Destroy(gameObject);
+
+                return true;
+            }
+
+            if (gameObject.name == "LS_Player3" && playerCount < 3)
+            {
+                getSetLS_playerHP = 0;
+
+                LS_miniGameController.SetPlayerDeathsInListAndSubmitScore(LS_controllerIndex);
+                Destroy(gameObject);
+
+                return true;
+            }
+
+            return false;
+        }
 
         //Gets called every frame.
         private void Update()
