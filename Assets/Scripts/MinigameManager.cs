@@ -2,29 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace XBOXParty
 {
-    public enum MinigameMode
-    {
-        MODE_FFA = 0,
-        MODE_2V2 = 1,
-        MODE_1V3 = 2
-    }
-
     public class MinigameManager : MonoBehaviour
     {
         [SerializeField]
-        private List<string> _minigamesFFA;
+        private List<MinigameData> m_Minigames;
 
         [SerializeField]
-        private List<string> _minigames2v2;
-
-        [SerializeField]
-        private List<string> _minigames1v3;
-
-        [SerializeField]
-        private string _debugMinigame;
+        private string m_DebugMinigame;
 
         private void Awake()
         {
@@ -44,56 +32,36 @@ namespace XBOXParty
 
             Debug.Log("Starting minigame!");
 
-            if (_debugMinigame != "")
+            if (m_DebugMinigame != "")
             {
-                GlobalGameManager.Instance.SetCurrentMinigameID(-1);
-                SceneManager.LoadScene(_debugMinigame);
+                GlobalGameManager.Instance.SetCurrentMinigame(null);
+                SceneManager.LoadScene(m_DebugMinigame);
                 return;
             }
 
-            //Determine random gamemode
-            int gameMode = 0;
-            string levelName = "";
+            List<MinigameData> playableMinigames = new List<MinigameData>();
 
-            //Only play 2v2 & 1v3 if it's a 4 player game.
-            if (GlobalGameManager.Instance.PlayerCount >= 4)
+            foreach(MinigameData data in m_Minigames)
             {
-                gameMode = Random.Range(0, 99);
-                gameMode /= 3;
+                if (data.GameMode == MinigameMode.MODE_FFA)
+                {
+                    playableMinigames.Add(data);
+                }
+                else
+                {
+                    //Only play 2v2 & 1v3 if it's a 4 player game.
+                    if (GlobalGameManager.Instance.PlayerCount >= 4)
+                    {
+                        playableMinigames.Add(data);
+                    }
+                }
             }
 
-            //Determine the level
-            int minigameID = 0;
+            int randomID = Random.Range(0, playableMinigames.Count);
+            MinigameData currenteMinigame = playableMinigames[randomID]; 
 
-            switch ((MinigameMode)gameMode)
-            {
-                case MinigameMode.MODE_FFA:
-                {
-                    minigameID = Random.Range(0, _minigamesFFA.Count);
-                    levelName = _minigamesFFA[minigameID];
-                    break;
-                }
-
-                case MinigameMode.MODE_2V2:
-                {
-                    minigameID = Random.Range(0, _minigames2v2.Count);
-                    levelName = _minigamesFFA[minigameID];
-                    break;
-                }
-
-                case MinigameMode.MODE_1V3:
-                {
-                    minigameID = Random.Range(0, _minigames1v3.Count);
-                    levelName = _minigamesFFA[minigameID];
-                    break;
-                }
-
-                default:
-                    break;
-            }
-
-            GlobalGameManager.Instance.SetCurrentMinigameID(minigameID);
-            SceneManager.LoadScene(levelName);
+            GlobalGameManager.Instance.SetCurrentMinigame(currenteMinigame);
+            SceneManager.LoadScene(currenteMinigame.RootScene);
         }
     }
 }

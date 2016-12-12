@@ -9,45 +9,39 @@ namespace Board
     public class BoardManager : MonoBehaviour
     {
         [SerializeField]
-        private Image _logoImage;
+        private Image m_LogoImage;
 
         [SerializeField]
-        private SpriteRenderer _boardImage;
+        private SpriteRenderer m_BoardImage;
 
         [SerializeField]
-        private List<Sprite> _logoSprites;
-
-        [SerializeField]
-        private List<Sprite> _boardSprites;
-
-        [SerializeField]
-        private List<Node> _nodes;
+        private List<Node> m_Nodes;
 
         // Use this for initialization
         private void Awake()
         {
-            int lastMinigame = GlobalGameManager.Instance.GetCurrentMinigameID();
+            MinigameData lastMinigame = GlobalGameManager.Instance.GetCurrentMinigame();
 
-            if (lastMinigame == -1)
-                lastMinigame = Random.Range(0, _logoSprites.Count);
-
-            _logoImage.sprite = _logoSprites[lastMinigame];
-            _boardImage.sprite = _boardSprites[lastMinigame];
+            if (lastMinigame != null)
+            {
+                m_LogoImage.sprite = lastMinigame.Logo;
+                m_BoardImage.sprite = lastMinigame.Background;
+            }
         }
 
         public Node GetNode(int id)
         {
-            if (id >= _nodes.Count)
+            if (id >= m_Nodes.Count)
                 return null;
 
-            return _nodes[id];
+            return m_Nodes[id];
         }
 
         public int GetNodeId(Node node)
         {
-            for (int i = 0; i < _nodes.Count; ++i)
+            for (int i = 0; i < m_Nodes.Count; ++i)
             {
-                if (_nodes[i] == node)
+                if (m_Nodes[i] == node)
                     return i;
             }
 

@@ -47,7 +47,7 @@ namespace XBOXParty
         }
 
         private bool _canStartMinigame = true;
-        private int _currentMinigameID = -1;
+        private MinigameData _currentMinigame = null;
 
         private List<int> _currentPawnPositions;
         private List<int> _addedPawnPositions;
@@ -225,14 +225,14 @@ namespace XBOXParty
                 _minigameStartEvent();
         }
 
-        public void SetCurrentMinigameID(int id)
+        public void SetCurrentMinigame(MinigameData minigameData)
         {
-            _currentMinigameID = id;
+            _currentMinigame = minigameData;
         }
 
-        public int GetCurrentMinigameID()
+        public MinigameData GetCurrentMinigame()
         {
-            return _currentMinigameID;
+            return _currentMinigame;
         }
 
         //Used by the minigames
