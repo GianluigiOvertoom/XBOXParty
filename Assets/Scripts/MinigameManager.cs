@@ -25,6 +25,7 @@ namespace XBOXParty
                 GlobalGameManager.Instance.MiniGameStartEvent -= OnStartMinigame;
         }
 
+        //Only for debug purposes
         private void OnStartMinigame()
         {
             if (GlobalGameManager.Instance.GameState != GameState.STATE_BOARD)
@@ -38,18 +39,21 @@ namespace XBOXParty
                 SceneManager.LoadScene(m_DebugMinigame);
                 return;
             }
+        }
 
+        public List<MinigameData> GenerateMinigameList()
+        {
             List<MinigameData> playableMinigames = new List<MinigameData>();
 
-            foreach(MinigameData data in m_Minigames)
+            foreach(MinigameData minigame in m_Minigames)
             {
                 //Never play the same game twice
-                if (GlobalGameManager.Instance.GetCurrentMinigame() != data)
+                if (GlobalGameManager.Instance.GetCurrentMinigame() != minigame)
                 {
                     //Always be able to play FFA
-                    if (data.GameMode == MinigameMode.MODE_FFA)
+                    if (minigame.GameMode == MinigameMode.MODE_FFA)
                     {
-                        playableMinigames.Add(data);
+                        playableMinigames.Add(minigame);
                     }
 
                     //Only play 2v2 & 1v3 if it's a 4 player game.
@@ -57,17 +61,19 @@ namespace XBOXParty
                     {
                         if (GlobalGameManager.Instance.PlayerCount >= 4)
                         {
-                            playableMinigames.Add(data);
+                            playableMinigames.Add(minigame);
                         }
                     }
                 }
             }
 
-            int randomID = Random.Range(0, playableMinigames.Count);
-            MinigameData currenteMinigame = playableMinigames[randomID]; 
+            return playableMinigames;
+        }
 
-            GlobalGameManager.Instance.SetCurrentMinigame(currenteMinigame);
-            SceneManager.LoadScene(currenteMinigame.RootScene);
+        public void LoadMinigame(MinigameData minigame)
+        {
+            GlobalGameManager.Instance.SetCurrentMinigame(minigame);
+            SceneManager.LoadScene(minigame.RootScene);
         }
     }
 }

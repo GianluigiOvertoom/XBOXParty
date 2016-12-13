@@ -35,6 +35,13 @@ namespace XBOXParty
         }
 
         [SerializeField]
+        private Sprite m_Thumbnail;
+        public Sprite Thumbnail
+        {
+            get { return m_Thumbnail; }
+        }
+
+        [SerializeField]
         private Sprite m_Logo;
         public Sprite Logo
         {
